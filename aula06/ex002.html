@@ -9,7 +9,7 @@
     <style>
         body{
             background-color: rgb(127, 127, 143);
-            color: white;
+            color: white;   /* Comentário em CSS */
             font: normal 20pt Arial;
         }
         h1{
@@ -18,10 +18,17 @@
     </style>
 </head>
 <body>
-    <h1>Olá,mundo!</h1>
+    <h1>Olá,mundo!</h1> <!--Comentário em HTML -->
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem expedita saepe alias minus unde esse voluptate quis autem fugiat! Cupiditate minima eos laudantium modi deleniti harum sit totam veniam quia.</p>
     <script>
-        var nome = window.prompt("Qual é o seu nome?")
+        var nome = window.prompt("Qual é o seu nome?") // Comentário em JS
+        window.alert("Seja bem vindo, " + nome)
+
+        var n1 = parseFloat(window.prompt("Digite um número: ")) // Sem o parseFloat(ou parseInt), ele retornaria uma String
+       
+        var n2 = Number(window.prompt("Digite outro número: ")) //No caso de Number, ele converte para int ou float, de acordo com a necessidade
+        var soma = n1 + n2
+        window.alert("A soma dos valores é: " + soma)
     </script>
 </body>
 </html>
